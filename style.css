@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Bg-Color: #0A69ED;
+    --Wrong-Color: #ff5d6a;
+    --Success-Color: #a8ff3e;
+    --Time-Bg-Color: #0a69ed50;
+    --Border-Color: #757575;
+}
+html{
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    background-color: var(--Bg-Color);
+}
+/* Start Container */
+.none{
+    display: none;
+}
+.dogru{
+    background-color: var(--Success-Color);
+    border: 1px solid green;
+    width: 100%;
+    padding: 15px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.4s all ease-in;
+}
+.yanlis{
+    background-color: var(--Wrong-Color);
+    border: 1px solid red;
+    width: 100%;
+    padding: 15px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.4s all ease-in;
+}
+.center{
+    align-self: center;
+    letter-spacing: 1.6px;
+}
+.big-container{
+    background-color: #f4f4f4;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    
+    border-radius: 10px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--Border-Color);
+}
+.question-num{
+    color: var(--Border-Color);
+    text-transform: capitalize;
+}
+.header div{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Time-Bg-Color);
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: var(--Bg-Color);
+}
+.main #question{
+    text-align: right;
+    font-size: 25px;
+    padding: 10px 0;
+}
+.ans-con{
+    direction: rtl;
+    padding-bottom: 20px;
+
+}
+.ans-con .anss{
+    width: 100%;
+    padding: 15px 15px;
+    border: 1px solid var(--Border-Color);
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.4s all ease-in;
+}
+.ans-con .anss:hover{
+    background-color: #757575;
+}
+button{
+    padding: 10px 30px;
+    width: fit-content;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    background-color: #0A69ED;
+    margin-top: 20px;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: 0.4s all ease-in;
+    color: white;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #0a69edd5;
+}
+
+@media (max-width:767px) {
+    .big-container{
+        width: 90vw;
+        padding: 10px 10px;
+        border-radius: 0;
+    }
+    #question{
+        font-size: 15px;
+    }
+}

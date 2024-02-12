@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- ? CSS File -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- ? Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <!-- ? Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="big-container">
+        <div class="header">
+            <span id="question-num" class="question-num"></span>
+            <div><i class="bi bi-stopwatch-fill"></i><span id="time">3:00</span></div>
+        </div>
+        <div class="main none">
+            <!-- <h1 id="question">من هو النبي الذي مات ولم يولد؟</h1>
+            <div class="ans-con">
+                <div>آدم عليه السلام</div>
+                <div>عيسى عليه السلام</div>
+                <div>إبراهيم عليه السلام</div>
+                <div>موسى عليه السلام</div>
+            </div> -->
+        </div>
+        <div id="yan-do" style="width: 100%;text-align: center; display: flex; justify-content: space-between;display: none;">
+            <div id="dogru-box" style="width: 50%;padding: 30px 0px; background-color: #a8ff3e; font-size: 20px; color: white;">10</div>
+            <div id="yanlis-box" style="width: 50%;padding: 30px 0px; background-color: #ff5d6a; font-size: 20px; color: white;">10</div>
+        </div>
+        <button class="center" id="start" onclick="startBtnClicked()">إبدأ</button>
+    </div>
+    <!-- ? JAVASCRIPT FILE -->
+    <script src="./main.js"></script>
+</body>
+</html>
